@@ -18,7 +18,7 @@ cosmos["compute"] = async function () {
 
   // list of validators
   const validators: Validator[] = (
-    await axios.get("https://cosmos.sg-1.online/validatorsets/latest")
+    await axios.get("https://cors-anywhere.herokuapp.com/https://api.cosmos.network/validatorsets/latest")
   ).data.result.validators;
 
   // the bonded amount of each validator
